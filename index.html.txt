@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autoridad de Cuencas - Provincia de Córdoba</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">AUTORIDAD DE CUENCAS</div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#institucional">Institucional</a></li>
+                <li><a href="#gestion">Unidades de Gestión</a></li>
+                <li><a href="#proyectos">Acciones y Proyectos</a></li>
+                <li><a href="#transparencia">Transparencia</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Gestión Integral de Recursos Hídricos</h1>
+            <p>Protección y saneamiento de las cuencas de la Provincia de Córdoba.</p>
+            <div class="stats-bar">
+                <div class="stat"><strong>28</strong> Obras Hidráulicas</div>
+                <div class="stat"><strong>+1.5M</strong> Beneficiarios</div>
+                <div class="stat"><strong>750 MW</strong> Energía Limpia</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="institucional" class="container">
+        <h2>Institucional</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Misión</h3>
+                <p>Implementar acciones para la reducción de la afectación, saneamiento y protección de los embalses y sus cuencas.</p>
+            </div>
+            <div class="card">
+                <h3>Funciones Técnicas</h3>
+                <ul>
+                    <li>Diagnóstico y promoción de soluciones de saneamiento.</li>
+                    <li>Administración del Fondo de Asistencia Ambiental.</li>
+                    <li>Coordinación con sectores académicos y sociales.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="gestion" class="bg-light container">
+        <h2>Unidades de Gestión</h2>
+        <p>Seleccione una cuenca para ver el detalle de los embalses y su mapa técnico.</p>
+        
+        <div class="tabs-cuencas">
+            <button class="tab-btn" onclick="cargarCuenca('San Roque')">San Roque</button>
+            <button class="tab-btn" onclick="cargarCuenca('Los Molinos')">Los Molinos</button>
+            <button class="tab-btn" onclick="cargarCuenca('Río Tercero')">Río Tercero</button>
+        </div>
+
+        <div id="info-visor" class="visor-container">
+            </div>
+    </section>
+
+    <section id="proyectos" class="container">
+        <h2>Acciones y Proyectos</h2>
+        <div class="infografias-grid">
+            <div class="proyecto-card">
+                <h3>Hoja de Ruta 2023-2038</h3>
+                <img src="Linea de tiempo FOCOS DE ACCION 2023-2038.jpg" alt="Plan de Saneamiento" class="img-fluid">
+                <p>Plan integral para el Lago San Roque: 100% agua potable (2026) y 85% cloacas (2038).</p>
+            </div>
+            <div class="proyecto-card">
+                <h3>Infraestructura de Diques y Presas</h3>
+                <img src="unnamed (1).jpg" alt="Catálogo de Obras" class="img-fluid">
+                <p>Gestión de 28 obras principales para control de crecidas, riego y energía.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="transparencia" class="container bg-light">
+        <h2>Participación y Transparencia</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Órgano Consultivo</h3>
+                <p>Asistencia técnica del sector académico (INA-CIRSA) para la preservación hídrica.</p>
+            </div>
+            <div class="card">
+                <h3>Contacto</h3>
+                <p>Av. Pablo Richieri 2187, Córdoba. Tel: 0800-888-2025.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Gobierno de la Provincia de Córdoba - Autoridad de Cuencas</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
